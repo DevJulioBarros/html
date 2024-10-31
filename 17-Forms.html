@@ -1,0 +1,36 @@
+<!-- FORMS
+    - Capturar dados de entradas
+    - Input -> Entrada
+
+    Action -> define para qual url será enviado os dados, vazio envia para mesma url 
+    Method
+        - GET
+        - POST
+
+-->
+
+<form action="" method="get" enctype="multipart/form-data">
+   <h1>Cadastro de novos clientes:</h1>
+    <label>
+        Rua:
+        <input type="text" name="Rua" autocomplete="street-address"/>
+    </label>
+
+    <label>
+        Número:
+        <input type="number" name="Número" autocomplete="cc-number"/>
+    </label>
+
+    <label>
+        Email:
+        <input type="email" name="email"/>
+    </label>
+
+    <label>
+        Arquivo:
+        <input type="file" name="Arquivo"/>
+    </label>
+
+    <button type="submit">Enviar dados</button>
+    <button type="reset"> Reset </button>
+</form>
